@@ -24,4 +24,4 @@ def login(request):
             else:
                 return render(request, 'login.html')
         else:
-            return render(request,'login.html') 
+            return render(request,'login.html')
