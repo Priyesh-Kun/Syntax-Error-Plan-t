@@ -17,9 +17,13 @@ from django.contrib import admin
 from django.urls import path,include
 from login import views as vl
 from todo import views as vt
+from calculator import views as vq
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('login.urls')),
-    path('daily_target/',vt.daily)
+    path('daily_target/',vt.daily),
+    path('monthly_target/',vt.monthly),
+    path('weekly_target/',vt.weekly),
+    path('',include('calculator.urls'))
 ]
