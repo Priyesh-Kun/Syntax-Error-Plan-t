@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/logo.jpg" type="image/x-icon" />
+    <title>Sign Up | Plan!t</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form input {
+        width: 400px;
+        height: 30px;
+        margin: 4px;
+        text-align: center;
+        border-radius: 8px;
+        border: 5px solid #2f82af;
+        color: black;
+        font-weight: bold;
+      }
+      .header {
+        text-align: center;
+        height: 175px;
+        font-size: 60px;
+        padding-top: 20px;
+      }
+      .submit {
+        color: white;
+        background-color: #6e9cff;
+        font-size: 22px;
+        margin: 23px;
+        font-family: auto;
+        border-radius: 5px;
+        border: none;
+        height: 35px;
+        width: 160px;
+      }
+      body {
+        background: url("/images/Background/WhatsApp\ Image\ 2023-01-14\ at\ 00.09.57.jpg");
+        background-size: cover;
+      }
+      .submit:hover {
+        cursor: pointer;
+        background-color: aqua;
+      }
+      .signup{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .signup p{
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <p>Sign Up!</p>
+    </div>
+    <form action="">
+      <input type="text" id="name" name="name" placeholder="Enter your Name" />
+      <input
+        type="text"
+        id="user_name"
+        name="user_name"
+        placeholder="Give yourself a username "
+      />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email here"
+      />
+      <input
+        type="password"
+        name="pass_word"
+        id="pass_word"
+        placeholder="Enter a password"
+      />
+      <input
+        type="password"
+        name="pass_word_confirm"
+        id="pass_word_confirm"
+        placeholder="Confirm your password"
+      />
+      <button type="submit" id="Submit" class="submit">Create Account</button>
+      <div class="signup">
+        <p>Already have an Account?</p>
+        <a href="signin.html">Sign In</a>
+      </div>
+    </form>
+  </body>
+</html>
