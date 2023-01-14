@@ -18,10 +18,10 @@
 }
 
 body {
-  background-image: url(/images/Background/WhatsApp\ Image\ 2023-01-14\ at\ 00.09.57.jpg);
+  background-image: url("/images/Background/bg9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  /* background-position: center center; */
 }
 .navbar {
   display: flex;
@@ -33,21 +33,19 @@ body {
 }
 
 #utilitiesmenu {
-  position: absolute;
+  position: fixed;
   width: 110px;
   top: 55px;
   left: 380px;
-  display: flex;
+  display: none;
   flex-direction: column;
-  border: 2px solid red;
 }
 #utilitiesmenu a {
-  /* margin-top: 3px;
-  margin-bottom: 3px; */
-  font-size: 24px;
+  font-size: 22px;
+  color: white;
+  background-color: black;
+  text-align: center;
   text-decoration: none;
-  border: 1px solid blue;
-  background-color: red; 
 }
 
 nav li {
@@ -69,6 +67,14 @@ nav li {
   margin-top: 3px;
   border-radius: 10px;
 }
+.btn a {
+  text-decoration: none;
+  font-size: 18px;
+}
+buttons {
+  position: absolute;
+  top: 2px;
+}
 .btn:hover {
   background-color: rgb(238, 189, 140);
   cursor: pointer;
@@ -76,7 +82,20 @@ nav li {
   border-radius: 10px;
   font-size: 17px;
 }
-nav li:hover {
+.avatar {
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+}
+nav li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover {
   text-decoration: underline;
   cursor: pointer;
   color: yellow;
@@ -87,40 +106,118 @@ nav li:hover {
   height: 336px;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
-.tagLine {
+.tagline1 {
   display: block;
   font-family: "Courier New", Courier, monospace;
-  text-align: center;
   font-size: 56px;
+  position: absolute;
   font-weight: 800;
+  top: 350px;
+  left: 356px;
+  color: black;
 }
 
-/* signin {
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-   justify-content: center; 
-  align-items: center;
-}
-
-.signin {
-  border: 2px solid blue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 278px;
-} */
 #head {
   text-align: center;
 }
-#login {
+
+#compavt {
+  display: none;
+  flex-direction: column;
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  border: 2px solid red;
+  background-color: black;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
   text-align: center;
 }
-
-table {
-  margin: auto;
+.avatar:hover{
+  cursor: pointer;
 }
+.logout {
+  font-size: 16px;
+  margin: 8px;
+  padding: 3px;
+  background-color: black;
+}
+.logout:hover {
+  cursor: pointer;
+  font-size: 18px;
+}
+.logout a {
+  text-decoration: none;
+  color: white;
+}
+.uname {
+  color: white;
+  margin: 4px;
+  font-size: 20px;
+}
+/* Common CSS */
+/* .utilities:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+.utilities {
+  width: 112px;
+  height: 28px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: fangsong;
+  cursor: pointer;
+}
+body {
+  background-image: url(/images/Background/WhatsApp\ Image\ 2023-01-14\ at\ 00.09.57.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: black;
+  width: 100%;
+}
+
+#utilitiesmenu {
+  position: absolute;
+  width: 110px;
+  top: 55px;
+  left: 380px;
+  display: none;
+  flex-direction: column;
+}
+#utilitiesmenu a {
+  font-size: 22px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 33px;
+  font-size: 20px;
+  color: white;
+  margin-right: 33px;
+  margin-top: 13px;
+  font-weight: bold;
+}
+nav li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: yellow;
+} */

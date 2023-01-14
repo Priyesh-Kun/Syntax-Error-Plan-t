@@ -9,37 +9,54 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar">
-      <li><button class="utilities" id="utilities" onclick="hide()">UTILITIES</button></li>
-      <li>DAILY TASKS</li>
-      <li>WEEKLY TASKS</li>
-      <li>MONTHLY TASKS</li>
-    </nav>
-    <button class="btn" id="signup">SignUp</button>
-    <button class="btn" id="Login">Login</button>
-
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav id="navbar" class="navbar">
+        <li>
+          <button class="utilities" id="utilities" onclick="hide()">
+            UTILITIES
+          </button>
+        </li>
+        <li><a href="Daily_Targets.html"> DAILY TASKS</a></li>
+        <li> <a href="weekly_target.html">WEEKLY TASKS</a> </li>
+        <li> <a href="monthly_target.html">MONTHLY TASKS</a> </li>
+      </nav>
+      <!-- Utilities Menu -->
+      <div id="utilitiesmenu">
+        <a href="calculator.html" target="_blank">Calculator</a>
+        <a href=""></a>
+      </div>
+    </header>
+    <buttons>
+      <button class="btn" id="signup">
+        <a href="signup.html" class="btn1"> SignUp</a>
+      </button>
+      <button class="btn" id="Login">
+        <a href="signin.html" class="btn2">Login</a>
+      </button>
+    </buttons>
     <!-- Plan!t NameTag -->
     <div class="appName" id="appName"><p class="App" id="App">Plan!t</p></div>
 
     <!-- TagLine -->
-    <div class="tagLine" id="tagLine">Th!nk !t, Plan !t, Execute !t</div>
+    <div class="tagline1">Th!nk !t, Plan !t, Execute !t</div>
 
-    <!-- Sign-in Menu -->
-    <!-- <div class="signin">
-      <div class="login"> 
-        Login
-      </div>
-    <signin>
-      <input type="email" name="email" id="email" placeholder="Enter your email">
-      <input type="password" name="password" id="password" placeholder="Enter the password">
-    </signin>
-  </div> -->
+    <div>
+      <button id="avatar">
+        <img
+          src="/avatars/avt2.png"
+          onclick="hide1()"
+          class="avatar"
+          id="avt"
+          alt=""
+        />
+      </button>
+    </div>
 
-    <!-- Utilities Menu -->
-    <div id="utilitiesmenu">
-      <a href="https://google.com">Calculator</a>
-      <a href="">My Money</a>
+    <div id="compavt">
+      <p class="uname">Hello! Username</p>
+      <button class="logout"><a href="">Logout</a></button>
     </div>
     <script src="index.js"></script>
   </body>
