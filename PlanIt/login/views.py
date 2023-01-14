@@ -80,3 +80,9 @@ def login(request):
                     login_status = False
                     return render(request,'signin.html')
     return render(request, 'signin.html')
+
+def logout(request):
+    login_status = False
+    userName = ''
+    context = {'login_status' : login_status, 'userName' : userName}
+    return render(request,'index.html',context)
