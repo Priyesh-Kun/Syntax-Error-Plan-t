@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'todo.apps.TodoConfig',
+    'calculator.apps.CalculatorConfig',
     'login.apps.LoginConfig',
     'django.contrib.admin',
     'django.contrib.auth',
