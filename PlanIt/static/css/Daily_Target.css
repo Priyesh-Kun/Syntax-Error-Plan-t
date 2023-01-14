@@ -7,7 +7,7 @@
   color: yellow;
 }
 body {
-  background-image: url("/images/Background/WhatsApp\ Image\ 2023-01-14\ at\ 00.09.57.jpg");
+  background-image: url("/static/Background/WhatsApp\ Image\ 2023-01-14\ at\ 00.09.57.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

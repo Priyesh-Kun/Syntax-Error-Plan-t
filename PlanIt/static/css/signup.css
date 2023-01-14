@@ -32,7 +32,7 @@ form {
     width: 160px;
   }
   body {
-    background: url("../Background/bg9.jpg");
+    background: url("/static/Background/bg9.jpg");
     background-size: cover;
   }
   .submit:hover {
