@@ -1,0 +1,49 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form input {
+    width: 400px;
+    height: 30px;
+    margin: 4px;
+    text-align: center;
+    border-radius: 8px;
+    border: 5px solid #2f82af;
+    color: black;
+    font-weight: bold;
+  }
+  .header {
+    text-align: center;
+    height: 175px;
+    font-size: 60px;
+    padding-top: 20px;
+  }
+  .submit {
+    color: white;
+    background-color: #6e9cff;
+    font-size: 22px;
+    margin: 23px;
+    font-family: auto;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    width: 160px;
+  }
+  body {
+    background: url("../Background/bg9.jpg");
+    background-size: cover;
+  }
+  .submit:hover {
+    cursor: pointer;
+    background-color: aqua;
+  }
+  .signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .signup p{
+    margin-right: 5px;
+  }
