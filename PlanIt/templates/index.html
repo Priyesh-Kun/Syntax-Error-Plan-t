@@ -20,8 +20,8 @@
           </button>
         </li>
         <li><a href="/daily_target"> DAILY TASKS</a></li>
-        <li> <a href="weekly_target.html">WEEKLY TASKS</a> </li>
-        <li> <a href="monthly_target.html">MONTHLY TASKS</a> </li>
+        <li> <a href="/weekly_target">WEEKLY TASKS</a> </li>
+        <li> <a href="/monthly_target">MONTHLY TASKS</a> </li>
       </nav>
       <!-- Utilities Menu -->
       <div id="utilitiesmenu">
@@ -29,6 +29,7 @@
         <a href=""></a>
       </div>
     </header>
+    {% if not login_status %}
     <buttons>
       <button class="btn" id="signup">
         <a href="/signup" class="btn1"> SignUp</a>
@@ -37,6 +38,7 @@
         <a href="/login" class="btn2">Login</a>
       </button>
     </buttons>
+    {%endif%}
     <!-- Plan!t NameTag -->
     <div class="appName" id="appName"><p class="App" id="App">Plan!t</p></div>
 
@@ -59,9 +61,9 @@
       <p class="uname">Hello! {{userName}}</p>
       <button class="logout"><a href="/logout">Logout</a></button>
     </div>
-    <script src="{% static 'js/index.js' %}"></script>
-    {% endif %}
     
+    {% endif %}
+    <script src="{% static 'js/index.js' %}"></script>
 
     {% comment %} {% if messages %}
     <ul class="messages">

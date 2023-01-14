@@ -9,6 +9,15 @@ input.addEventListener("keyup", () => {
     addBtn.classList.remove("active");
   }
 });
+function hide() {
+  let utilities = document.getElementById("utilities");
+  let utiliesmenu = document.getElementById("utilitiesmenu");
+  if (utiliesmenu.style.display != "flex") {
+    utiliesmenu.style.display = "flex";
+  } else {
+    utiliesmenu.style.display = "none";
+  }
+}
 
 addBtn.addEventListener("click", () => {
   if (input.value.trim != 0) {
@@ -37,6 +46,8 @@ tasks.addEventListener('click', (e)=>{
 tasks.addEventListener('click', (e)=>{
     if(e/target.classList.contains('fa-pen-to-square')){
         e.target.parentElement.parentElement.classList.toggle('completed');
+        let audio = new Audio('/static/sound/taskcompletion.wav');
+        audio.play();
     }}
 )
 

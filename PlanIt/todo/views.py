@@ -7,3 +7,11 @@ from todo.models import DailyTasks, WeeklyTasks, MonthlyTasks
 def daily(request):
     # if request.method == "POST":
     return render(request, "Daily_Target.html")
+
+def monthly(request):
+    # if request.method == "POST":
+    return render(request, "monthly_target.html")
+
+def weekly(request):
+    # if request.method == "POST":
+    return render(request, "weekly_target.html")
