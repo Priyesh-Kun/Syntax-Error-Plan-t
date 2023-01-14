@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="{% static 'logo.jpg' %}" type="image/x-icon" />
+    <title>Sign Up | Plan!t</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}" />
+  </head>
+  <body>
+    <div class="header">
+      <p>Sign Up!</p>
+    </div>
+    <form method="post" action="/signup">
+      {% csrf_token %}
+      <input type="text" id="name" name="name" placeholder="Enter your Name" />
+      <input
+        type="text"
+        id="user_name"
+        name="user_name"
+        placeholder="Give yourself a username "
+      />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email here"
+      />
+      <input
+        type="password"
+        name="pass_word"
+        id="pass_word"
+        placeholder="Enter a password"
+      />
+      <input
+        type="password"
+        name="pass_word_confirm"
+        id="pass_word_confirm"
+        placeholder="Confirm your password"
+      />
+      <button type="submit" id="Submit" class="submit">Create Account</button>
+      <div class="signup">
+        <p>Already have an Account?</p>
+        <a href="signin.html">Sign In</a>
+      </div>
+    </form>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+  </body>
+</html>
