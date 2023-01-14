@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.utilities:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+.utilities {
+  width: 112px;
+  height: 28px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: fangsong;
+  cursor: pointer;
+}
+
+body {
+  background-image: url(/images/Background/WhatsApp\ Image\ 2023-01-14\ at\ 00.09.57.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: black;
+  width: 100%;
+  /* position: fixed; */
+}
+
+#utilitiesmenu {
+  position: absolute;
+  width: 110px;
+  top: 55px;
+  left: 380px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+#utilitiesmenu a {
+  /* margin-top: 3px;
+  margin-bottom: 3px; */
+  font-size: 24px;
+  text-decoration: none;
+  border: 1px solid blue;
+  background-color: red; 
+}
+
+nav li {
+  list-style: none;
+  margin-left: 33px;
+  font-size: 20px;
+  color: white;
+  margin-right: 33px;
+  margin-top: 13px;
+  font-weight: bold;
+}
+.btn {
+  width: 72px;
+  height: 42px;
+  color: white;
+  background-color: peru;
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 3px;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: rgb(238, 189, 140);
+  cursor: pointer;
+  color: black;
+  border-radius: 10px;
+  font-size: 17px;
+}
+nav li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: yellow;
+}
+.appName {
+  font-size: 120px;
+  display: flex;
+  height: 336px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagLine {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 800;
+}
+
+/* signin {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+   justify-content: center; 
+  align-items: center;
+}
+
+.signin {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 278px;
+} */
+#head {
+  text-align: center;
+}
+#login {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
