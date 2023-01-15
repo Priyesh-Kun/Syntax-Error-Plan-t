@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Target</title>
+    <title>Monthly Target</title>
     <link rel="icon" href="/static/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/Daily_Target.css' %}" />
     <link
@@ -22,10 +22,12 @@
           <button class="utilities" id="utilities" onclick="hide()">
             UTILITIES
           </button>
+        </li>
         <li><a href="/daily_target"> DAILY TASKS</a></li>
         <li><a href="/weekly_target">WEEKLY TASKS</a></li>
         <li><a href="/monthly_target">MONTHLY TASKS</a></li>
       </nav>
+      <a id="home" href=" ">HOME</a>
       <!-- Utilities Menu -->
       <div id="utilitiesmenu">
         <a href="/calculator" target="_blank">Calculator</a>
@@ -33,13 +35,12 @@
       </div>
     </header>
       <div class="main">
-      <h1 class="Heading">Monthly Targets 🎯</h1>
+      <h1 class="Heading">Month's Target 🎯</h1>
       <div class="planit">
         <div class="task">
-          <form class="task" action="">
             <input type="text" class="text" id="text" />
-            <button class="Add" type="submit">➕</button>
-          </form>
+            <button class="Add" >➕</button>
+            <button id="btn" onclick="voice()">🎙️</button>
         </div>
         <div class="tasks">
           <!-- <div class="item ">
@@ -51,7 +52,7 @@
         </div> -->
         </div>
       </div>
-    </div>
+
 
     <script src="{% static 'js/Daily_Target.js' %}"></script>
   </body>

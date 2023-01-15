@@ -8,6 +8,8 @@
     <title>PLAN!t</title>
     <link rel="icon" href="{% static 'logo.jpg' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Sofia+Sans:wght@300&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <!-- Header -->
@@ -19,9 +21,11 @@
             UTILITIES
           </button>
         </li>
+        {% if login_status %}
         <li><a href="/daily_target"> DAILY TASKS</a></li>
         <li> <a href="/weekly_target">WEEKLY TASKS</a> </li>
         <li> <a href="/monthly_target">MONTHLY TASKS</a> </li>
+        {% endif %}
       </nav>
       <!-- Utilities Menu -->
       <div id="utilitiesmenu">
@@ -35,7 +39,7 @@
         <a href="/signup" class="btn1"> SignUp</a>
       </button>
       <button class="btn" id="Login">
-        <a href="/login" class="btn2">Login</a>
+        <a href="/login" class="btn1">Login</a>
       </button>
     </buttons>
     {%endif%}
@@ -43,7 +47,7 @@
     <div class="appName" id="appName"><p class="App" id="App">Plan!t</p></div>
 
     <!-- TagLine -->
-    <div class="tagline1">Th!nk !t, Plan !t, Execute !t</div>
+    <div class="tagline1">Think !t, Plan !t, Execute !t</div>
     {% if login_status %}
     <div>
       

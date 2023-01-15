@@ -7,6 +7,15 @@ regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 # Create your views here.
 
 def index(request):
+    form = Users.objects.all()
+    user = ''
+    login_status = False
+    for data in form:
+        if data.current_user == True:
+            user = data.user_name
+            login_status = True
+    context = {'login_status':login_status, 'user_name':user}
+
     return render(request,'index.html')
 def sign_up(request):
     login_status = False
@@ -29,7 +38,7 @@ def sign_up(request):
         if pass_word != pass_word_confirm:
             messages.error(request, 'Both passwords mismatch!!')
             return render(request, "signup.html")
-        user = Users(user_name=user_name,name=name,email=email,pass_word=pass_word,pass_word_confirm=pass_word_confirm)
+        user = Users(user_name=user_name,name=name,email=email,pass_word=pass_word,pass_word_confirm=pass_word_confirm,current_user=True)
         user.save()
 
         context['login_status'] = True
@@ -57,6 +66,7 @@ def login(request):
                     if data.pass_word == password:
                         context['login_status'] = True
                         context['userName'] = data.user_name
+                        data.current_user = True
                         messages.success(request,'Successfully Logged In !')
                         return render(request, 'index.html', context)
                     else:
@@ -70,6 +80,7 @@ def login(request):
                     if data.pass_word == password:
                         context['login_status'] = True
                         context['userName'] = data.user_name
+                        data.current_user=True
                         messages.success(request,'Successfully Logged In !')
                         return render(request, 'index.html', context)
                     else:
@@ -82,5 +93,10 @@ def login(request):
 def logout(request):
     login_status = False
     userName = ''
+    form = Users.objects.all()
+    for data  in form:
+        if data.current_user==True:
+            data.current_user = False
+
     context = {'login_status' : login_status, 'userName' : userName}
     return render(request,'index.html',context)

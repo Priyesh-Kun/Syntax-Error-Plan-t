@@ -7,5 +7,6 @@ class Users(models.Model):
     email=models.CharField(max_length=122)
     pass_word = models.CharField(max_length=20)
     pass_word_confirm = models.CharField(max_length=20)
+    current_user=models.BooleanField(default=False)
     def __str__(self):
         return self.name

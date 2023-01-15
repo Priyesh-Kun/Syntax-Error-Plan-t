@@ -27,6 +27,7 @@
         <li><a href="/weekly_target">WEEKLY TASKS</a></li>
         <li><a href="/monthly_target">MONTHLY TASKS</a></li>
       </nav>
+      <a id="home" href="/index">HOME</a>
       <!-- Utilities Menu -->
       <div id="utilitiesmenu">
         <a href="/calculator" target="_blank">Calculator</a>
@@ -37,10 +38,9 @@
       <h1 class="Heading">Today's Target 🎯</h1>
       <div class="planit">
         <div class="task">
-          <form class="task" action="">
             <input type="text" class="text" id="text" />
-            <button class="Add" type="submit">➕</button>
-          </form>
+            <button class="Add" >➕</button>
+            <button id="btn" onclick="voice()">🎙️</button>
         </div>
         <div class="tasks">
           <!-- <div class="item ">
@@ -52,7 +52,7 @@
         </div> -->
         </div>
       </div>
-    </div>
+
 
     <script src="{% static 'js/Daily_Target.js' %}"></script>
   </body>

@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="{% static 'logo.jpg' %}" type="image/x-icon" />
     <title>Sign Up | Plan!t</title>
+    <style>
+      #signin1{
+        color: white;
+      }
+    </style>
     <link rel="stylesheet" href="{% static 'css/signup.css' %}" />
   </head>
   <body>
@@ -43,7 +48,7 @@
       <button type="submit" id="Submit" class="submit">Create Account</button>
       <div class="signup">
         <p>Already have an Account?</p>
-        <a href="/login">Sign In</a>
+        <a href="/login" id="signin1">Sign In</a>
       </div>
     </form>
     
